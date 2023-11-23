@@ -1,0 +1,26 @@
+version: 2
+
+models:
+
+  - name: v_person
+    description: 'Demographic information about individuals'
+    columns:
+      - name: person_id
+        description: 'Unique identifier for the person'
+        tests:
+          - unique
+          - not_null
+      - name: gender
+        description: 'Map F to 8530 blah blah'
+
+  - name: v_observation_period
+    description: 'Calculate observation period'
+    columns:
+      - name: min_date
+        description: 'obs date min'
+        tests:
+          - not_null
+      - name: max_date
+        description: 'obs date max'
+        tests:
+          - not_null

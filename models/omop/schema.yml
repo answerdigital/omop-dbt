@@ -1,0 +1,24 @@
+version: 2
+
+models:
+
+  - name: observation_period
+    description: 'observation_period'
+    columns:
+      - name: min_date
+        description: 'obs date min'
+        tests:
+          - not_null
+      - name: max_date
+        description: 'obs date max'
+        tests:
+          - not_null
+
+  - name: person
+    description: 'Demographic information about individuals'
+    columns:
+      - name: person_id
+        description: 'Unique identifier for the person'
+        tests:
+          - unique
+          - not_null

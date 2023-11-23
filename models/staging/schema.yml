@@ -1,0 +1,14 @@
+version: 2
+
+models:
+        
+  - name: stg_patient
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: first_name
+      - name: last_name
+      - name: gender
+      - name: ob_date
